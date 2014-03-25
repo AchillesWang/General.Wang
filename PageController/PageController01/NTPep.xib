@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NTPep">
+            <connections>
+                <outlet property="imageView" destination="lVM-bd-DdV" id="sn3-Xn-UuH"/>
+                <outlet property="label" destination="mZL-eN-u87" id="PII-PN-mB8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZL-eN-u87">
+                    <rect key="frame" x="261" y="20" width="46" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lVM-bd-DdV">
+                    <rect key="frame" x="184" y="60" width="200" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="MJ8-1N-PMJ"/>
+                        <constraint firstAttribute="height" constant="200" id="pAd-ga-6FO"/>
+                    </constraints>
+                </imageView>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8w-48-jUO">
+                    <rect key="frame" x="468" y="0.0" width="100" height="320"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="vbE-U7-0Vt"/>
+                    </constraints>
+                </view>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zw8-GW-t0x">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="320"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="dMh-SD-bIQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93160753689999998" green="1" blue="0.27385625190000001" alpha="1" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="mZL-eN-u87" secondAttribute="centerX" id="7ev-Te-i4I"/>
+                <constraint firstItem="mZL-eN-u87" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="BuR-9x-KPI"/>
+                <constraint firstAttribute="bottom" secondItem="zw8-GW-t0x" secondAttribute="bottom" id="DNh-ch-j1x"/>
+                <constraint firstItem="zw8-GW-t0x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NpY-Gr-Etv"/>
+                <constraint firstItem="L8w-48-jUO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="O9L-dy-KO4"/>
+                <constraint firstAttribute="centerX" secondItem="lVM-bd-DdV" secondAttribute="centerX" id="S1u-3P-RZ7"/>
+                <constraint firstAttribute="bottom" secondItem="L8w-48-jUO" secondAttribute="bottom" id="UhT-fY-A3a"/>
+                <constraint firstItem="zw8-GW-t0x" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dzg-mc-wCT"/>
+                <constraint firstAttribute="trailing" secondItem="L8w-48-jUO" secondAttribute="trailing" id="mkJ-vc-HIw"/>
+                <constraint firstAttribute="centerY" secondItem="lVM-bd-DdV" secondAttribute="centerY" id="wPK-MF-vNP"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
