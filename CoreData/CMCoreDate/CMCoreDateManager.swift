@@ -77,19 +77,41 @@ class CMCoreDateManager: NSObject {
             }
         }
     }
-    // MARK: - Init
+    // MARK: - Override func
+    //构造函数
     override init() {
         super.init()
         self.registerNotification()
     }
+    //析构函数
+    deinit{
+        self.registerNotification();
+    }
+    // MARK: - Share instance 
+    class var sharedInstance:CMCoreDateManager{
+        struct Static {
+            static var onceToken : dispatch_once_t = 0
+            static var instance : CMCoreDateManager? = nil
+        }
+        dispatch_once(&Static.onceToken) {
+            Static.instance = CMCoreDateManager()
+        }
+        return Static.instance!
+    }
     
+    // MARK: - Notification
+    /*
+    * 注册通知
+    */
     func registerNotification(){
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "applicationWillResignActive", name: UIApplicationWillResignActiveNotification, object: nil)
     }
     func applicationWillResignActive(){
-        self
+        self.saveContext();
     }
-    
+    /*
+    *   解雇通知
+    */
     func resignNotification(){
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UIApplicationWillResignActiveNotification, object: self);
     }

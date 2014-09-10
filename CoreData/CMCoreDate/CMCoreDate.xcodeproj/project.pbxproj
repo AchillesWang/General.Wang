@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D01055DD19C0506F00F8C45F /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01055DC19C0506F00F8C45F /* List.swift */; };
 		D01D51BD19B9AFB900B018FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01D51BC19B9AFB900B018FB /* AppDelegate.swift */; };
 		D01D51C019B9AFB900B018FB /* CMCoreDate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D01D51BE19B9AFB900B018FB /* CMCoreDate.xcdatamodeld */; };
 		D01D51C219B9AFB900B018FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01D51C119B9AFB900B018FB /* ViewController.swift */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D01055DB19C0506F00F8C45F /* CMCoreDate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CMCoreDate-Bridging-Header.h"; sourceTree = "<group>"; };
+		D01055DC19C0506F00F8C45F /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		D01D51B719B9AFB900B018FB /* CMCoreDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMCoreDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01D51BB19B9AFB900B018FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D01D51BC19B9AFB900B018FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +88,9 @@
 				D01D51C319B9AFB900B018FB /* Main.storyboard */,
 				D01D51C619B9AFB900B018FB /* Images.xcassets */,
 				D01D51BE19B9AFB900B018FB /* CMCoreDate.xcdatamodeld */,
+				D01055DC19C0506F00F8C45F /* List.swift */,
 				D01D51BA19B9AFB900B018FB /* Supporting Files */,
+				D01055DB19C0506F00F8C45F /* CMCoreDate-Bridging-Header.h */,
 			);
 			path = CMCoreDate;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 				D01D51DD19B9AFED00B018FB /* CMCoreDateManager.swift in Sources */,
 				D01D51C219B9AFB900B018FB /* ViewController.swift in Sources */,
 				D01D51C019B9AFB900B018FB /* CMCoreDate.xcdatamodeld in Sources */,
+				D01055DD19C0506F00F8C45F /* List.swift in Sources */,
 				D01D51BD19B9AFB900B018FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,9 +339,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CMCoreDate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CMCoreDate/CMCoreDate-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -344,9 +353,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CMCoreDate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CMCoreDate/CMCoreDate-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -403,6 +414,7 @@
 				D01D51D819B9AFB900B018FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D01D51D919B9AFB900B018FB /* Build configuration list for PBXNativeTarget "CMCoreDateTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +423,7 @@
 				D01D51DB19B9AFB900B018FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
